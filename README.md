@@ -19,5 +19,5 @@ and now in your application.css you can include the css file like so:
     *= require 'modern-pictograms'
     
 
-icons classes lists
+icons classes list:
     http://hylozero.github.com/modern-pictograms-rails/
