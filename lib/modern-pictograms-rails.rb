@@ -1,4 +1,4 @@
-require "modern-pictograms-rails/version"
+#require "modern-pictograms-rails/version"
 
 module Modern
   module Pictograms
