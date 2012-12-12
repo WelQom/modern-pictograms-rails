@@ -1,0 +1,186 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY .:
+    http://creativecommons.org/licenses/by/./ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+    font-family: 'modern_pictogramsnormal';
+    src: url('modernpics.eot');
+    src: url('modernpics.eot?#iefix') format('embedded-opentype'),
+         url('modernpics.woff') format('woff'),
+         url('modernpics.ttf') format('truetype'),
+         url('modernpics.svg#modern_pictogramsnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('<%= asset_path('fontawesome-webfont.eot') %>');
+  src: url('<%= asset_path('fontawesome-webfont.eot?#iefix') %>') format('eot'), 
+       url('<%= asset_path('fontawesome-webfont.woff') %>') format('woff'),
+       url('<%= asset_path('fontawesome-webfont.ttf') %>') format('truetype'),
+       url('<%= asset_path('fontawesome-webfont.svg#FontAwesome') %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: modern_pictogramsnormal;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* hide default bootstrap backgrounds so that they don't overlap with font awesome */
+[class^="icon-"], [class*=" icon-"], .icon-white, .nav > .active > a > [class^="icon-"], .nav > .active > a > [class=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:hover > [class=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"] {
+  background: none;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font % larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: .em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: .em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* . increased font size for icon-large * . width */
+
+  width: .em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: ;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -.em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-mp-exclamation:before               { content:'\0021';}
+.icon-mp-money:before                			{ content:'\0023';}
+.icon-mp-money-bag:before                	{ content:'\0024';}
+.icon-mp-checked:before                   { content:'\0025';}
+.icon-mp-traffic-plate:before             { content:'\0027';} 
+.icon-mp-tools:before                			{ content:'\0028';} 
+.icon-mp-condecoration:before             { content:'\0029';} 
+.icon-mp-star:before                			{ content:'\002A';}
+.icon-mp-plus-sign:before                 { content: "\002A"; } 
+.icon-mp-map-clip:before                  { content: "\002C"; } 
+.icon-mp-triangle:before                  { content: "\002D"; } 
+.icon-mp-cart:before                			{ content: "\002E"; } 
+.icon-mp-inverse-triangle:before          { content: "\002F"; } 
+.icon-mp-mute-speaker:before              { content: "\0030"; } 
+.icon-mp-low-speaker:before               { content: "\0031"; } 
+.icon-mp-loud-speaker:before              { content: "\0032"; } 
+.icon-mp-spreadsheet:before               { content: "\0033"; } 
+.icon-mp-check-list:before                { content: "\0034"; } 
+.icon-mp-phone-keyboard:before            { content: "\0035"; } 
+.icon-mp-statistics:before                { content: "\0036"; } 
+.icon-mp-bar-chart:before                 { content: "\0037"; } 
+.icon-mp-pie-chart:before                 { content: "\0038"; } 
+.icon-mp-bell:before                			{ content: "\0039"; } 
+.icon-mp-previous:before                  { content: "\003C"; } 
+.icon-mp-information:before               { content: "\003D"; }  
+.icon-mp-next:before                			{ content: "\003E"; } 
+.icon-mp-question-mark:before             { content: "\003F"; } 
+.icon-mp-at-symbol:before                 { content: "\0040"; }
+.icon-mp-camera:before                		{ content: "\0041"; } 
+.icon-mp-book:before                			{ content: "\0042"; } 
+.icon-mp-cd-disk:before                		{ content: "\0043"; } 
+.icon-mp-file-download:before             { content: "\0044"; } 
+.icon-mp-black-eye:before                 { content: "\0045"; } 
+.icon-mp-fb-f-icon:before                 { content: "\0046"; } 
+.icon-mp-fb-square-icon:before            { content: "\0047"; } 
+.icon-mp-hand-camcoder:before             { content: "\0048"; } 
+.icon-mp-trash:before                			{ content: "\0049"; } 
+.icon-mp-tag:before                				{ content: "\004A"; } 
+.icon-mp-file:before                			{ content: "\004B"; } 
+.icon-mp-dislike:before                		{ content: "\004C"; } 
+.icon-mp-mp3-player:before                 { content: "\004D"; } 
+.icon-mp-cellphone:before              { content: "\004E"; } 
+.icon-mp-smartphone:before             { content: "\004F"; } 
+
+.icon-mp-play:before                			{ content: "\0050"; } 
+.icon-mp-tablet:before                		{ content: "\0051"; } 
+.icon-mp-refresh:before                		{ content: "\0052"; } 
+.icon-mp-projection-screen:before         { content: "\0053"; } 
+.icon-mp-twitter-t-icon:before            { content: "\0054"; } 
+.icon-mp-twitter-square-icon:before       { content: "\0055"; } 
+.icon-mp-pen-paper:before                 { content: "\0056"; } 
+.icon-mp-copy:before                			{ content: "\0057"; } 
+.icon-mp-close:before                			{ content: "\0058"; } 
+.icon-mp-megaphone:before                 { content: "\0059"; } 
+.icon-mp-paragraph:before                 { content: "\005A"; } 
+.icon-mp-down-arrow:before                { content: "\005B"; } 
+.icon-mp-squares:before                   { content: "\005C"; } 
+.icon-mp-up-arrow:before                  { content: "\005D"; } 
+.icon-mp-rss:before                				{ content: "\005E"; } 
+.icon-mp-file-cabinet:before              { content: "\005F"; } 
+.icon-mp-antenna:before                		{ content: "\0060"; } 
+.icon-mp-newspaper:before                 { content: "\0061"; } 
+.icon-mp-baloon-message:before            { content: "\0062"; }	
+.icon-mp-telephone:before                 { content: "\0063"; }	 
+.icon-mp-printer:before                		{ content: "\0064"; }	 
+.icon-mp-pencil-zoom:before               { content: "\0065"; }	 
+.icon-mp-male-user:before                 { content: "\0066"; }	 
+.icon-mp-users:before                			{ content: "\0067"; }	 
+.icon-mp-camcoder:before                  { content: "\0068"; } 
+.icon-mp-heart:before                			{ content: "\006A"; } 
+.icon-mp-female-user:before               { content: "\006B"; } 
+.icon-mp-like:before                			{ content: "\006C"; } 
+.icon-mp-letter:before                		{ content: "\006D"; } 
+.icon-mp-closed-locker:before             { content: "\006E"; } 
+
+.icon-mp-arrow-out:before             		{ content: "\006F"; } 
+.icon-mp-house:before             				{ content: "\0070"; } 
+
+.icon-mp-opened-locker:before             { content: "\0071"; } 
+.icon-mp-pencil:before                		{ content: "\0072"; } 
+.icon-mp-zoom:before                			{ content: "\0073"; } 
+.icon-mp-birdie:before                		{ content: "\0074"; } 
+.icon-mp-converge:before                  { content: "\0075"; } 
+.icon-mp-disperse:before                  { content: "\0076"; } 
+.icon-mp-globe:before               		 	{ content: "\0077"; } 
+.icon-mp-circle-close:before              { content: "\0078"; } 
+.icon-mp-zoom-in:before               		{ content: "\0079"; } 
+.icon-mp-zoom-out:before                	{ content: "\007A"; } 
+.icon-mp-clock-pointers:before            { content: "\007B"; } 
+.icon-mp-clock:before                			{ content: "\007D"; }
