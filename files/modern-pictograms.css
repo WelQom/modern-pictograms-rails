@@ -1,0 +1,187 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY .:
+    http://creativecommons.org/licenses/by/./ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+
+@font-face {
+    font-family: 'modern_pictogramsnormal';
+    src: url('modernpics.eot');
+    src: url('modernpics.eot?#iefix') format('embedded-opentype'),
+         url('modernpics.woff') format('woff'),
+         url('modernpics.ttf') format('truetype'),
+         url('modernpics.svg#modern_pictogramsnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('/assets/fontawesome-webfont.eot');
+  src: url('/assets/fontawesome-webfont.eot?#iefix') format('eot'), 
+       url('/assets/fontawesome-webfont.woff') format('woff'),
+       url('/assets/fontawesome-webfont.ttf') format('truetype'),
+       url('/assets/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="mpicon-"]:before, [class*=" mpicon-"]:before {
+  font-family: modern_pictogramsnormal;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* hide default bootstrap backgrounds so that they don't overlap with font awesome */
+[class^="mpicon-"], [class*=" mpicon-"], .mpicon-white, .nav > .active > a > [class^="mpicon-"], .nav > .active > a > [class=" mpicon-"], .dropdown-menu > li > a:hover > [class^="mpicon-"], .dropdown-menu > li > a:hover > [class=" mpicon-"], .dropdown-menu > .active > a > [class^="mpicon-"], .dropdown-menu > .active > a > [class*=" mpicon-"] {
+  background: none;
+}
+a [class^="mpicon-"], a [class*=" mpicon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font % larger relative to the icon container */
+.mpicon-large:before {
+  vertical-align: top;
+  font-size: .em;
+}
+.btn [class^="mpicon-"], .btn [class*=" mpicon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .em;
+}
+li [class^="mpicon-"], li [class*=" mpicon-"] {
+  display: inline-block;
+  width: .em;
+  text-align: center;
+}
+li .mpicon-large[class^="mpicon-"], li .mpicon-large[class*=" mpicon-"] {
+  /* . increased font size for mpicon-large * . width */
+
+  width: .em;
+}
+li[class^="mpicon-"], li[class*=" mpicon-"] {
+  margin-left: ;
+  list-style-type: none;
+}
+li[class^="mpicon-"]:before, li[class*=" mpicon-"]:before {
+  text-indent: -em;
+  text-align: center;
+}
+li[class^="mpicon-"].mpicon-large:before, li[class*=" mpicon-"].mpicon-large:before {
+  text-indent: -.em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.mpicon-exclamation:before               { content:'\0021';}
+.mpicon-money:before                			{ content:'\0023';}
+.mpicon-money-bag:before                	{ content:'\0024';}
+.mpicon-checked:before                   { content:'\0025';}
+.mpicon-traffic-plate:before             { content:'\0027';} 
+.mpicon-tools:before                			{ content:'\0028';} 
+.mpicon-condecoration:before             { content:'\0029';} 
+.mpicon-star:before                			{ content:'\002A';}
+.mpicon-plus-sign:before                 { content: "\002B"; } 
+.mpicon-map-clip:before                  { content: "\002C"; } 
+.mpicon-triangle:before                  { content: "\002D"; } 
+.mpicon-cart:before                			{ content: "\002E"; } 
+.mpicon-inverse-triangle:before          { content: "\002F"; } 
+.mpicon-mute-speaker:before              { content: "\0030"; } 
+.mpicon-low-speaker:before               { content: "\0031"; } 
+.mpicon-loud-speaker:before              { content: "\0032"; } 
+.mpicon-spreadsheet:before               { content: "\0033"; } 
+.mpicon-check-list:before                { content: "\0034"; } 
+.mpicon-phone-keyboard:before            { content: "\0035"; } 
+.mpicon-statistics:before                { content: "\0036"; } 
+.mpicon-bar-chart:before                 { content: "\0037"; } 
+.mpicon-pie-chart:before                 { content: "\0038"; } 
+.mpicon-bell:before                			{ content: "\0039"; } 
+.mpicon-previous:before                  { content: "\003C"; } 
+.mpicon-information:before               { content: "\003D"; }  
+.mpicon-next:before                			{ content: "\003E"; } 
+.mpicon-question-mark:before             { content: "\003F"; } 
+.mpicon-at-symbol:before                 { content: "\0040"; }
+.mpicon-camera:before                		{ content: "\0041"; } 
+.mpicon-book:before                			{ content: "\0042"; } 
+.mpicon-cd-disk:before                		{ content: "\0043"; } 
+.mpicon-file-download:before             { content: "\0044"; } 
+.mpicon-black-eye:before                 { content: "\0045"; } 
+.mpicon-fb-f-icon:before                 { content: "\0046"; } 
+.mpicon-fb-square-icon:before            { content: "\0047"; } 
+.mpicon-hand-camcoder:before             { content: "\0048"; } 
+.mpicon-trash:before                			{ content: "\0049"; } 
+.mpicon-tag:before                				{ content: "\004A"; } 
+.mpicon-file:before                			{ content: "\004B"; } 
+.mpicon-dislike:before                		{ content: "\004C"; } 
+.mpicon-mp3-player:before                 { content: "\004D"; } 
+.mpicon-cellphone:before              { content: "\004E"; } 
+.mpicon-smartphone:before             { content: "\004F"; } 
+
+.mpicon-play:before                			{ content: "\0050"; } 
+.mpicon-tablet:before                		{ content: "\0051"; } 
+.mpicon-refresh:before                		{ content: "\0052"; } 
+.mpicon-projection-screen:before         { content: "\0053"; } 
+.mpicon-twitter-t-icon:before            { content: "\0054"; } 
+.mpicon-twitter-square-icon:before       { content: "\0055"; } 
+.mpicon-pen-paper:before                 { content: "\0056"; } 
+.mpicon-copy:before                			{ content: "\0057"; } 
+.mpicon-close:before                			{ content: "\0058"; } 
+.mpicon-megaphone:before                 { content: "\0059"; } 
+.mpicon-paragraph:before                 { content: "\005A"; } 
+.mpicon-down-arrow:before                { content: "\005B"; } 
+.mpicon-squares:before                   { content: "\005C"; } 
+.mpicon-up-arrow:before                  { content: "\005D"; } 
+.mpicon-rss:before                				{ content: "\005E"; } 
+.mpicon-file-cabinet:before              { content: "\005F"; } 
+.mpicon-antenna:before                		{ content: "\0060"; } 
+.mpicon-newspaper:before                 { content: "\0061"; } 
+.mpicon-baloon-message:before            { content: "\0062"; }	
+.mpicon-telephone:before                 { content: "\0063"; }	 
+.mpicon-printer:before                		{ content: "\0064"; }	 
+.mpicon-pencil-zoom:before               { content: "\0065"; }	 
+.mpicon-male-user:before                 { content: "\0066"; }	 
+.mpicon-users:before                			{ content: "\0067"; }	 
+.mpicon-camcoder:before                  { content: "\0068"; } 
+.mpicon-heart:before                			{ content: "\006A"; } 
+.mpicon-female-user:before               { content: "\006B"; } 
+.mpicon-like:before                			{ content: "\006C"; } 
+.mpicon-letter:before                		{ content: "\006D"; } 
+.mpicon-closed-locker:before             { content: "\006E"; } 
+
+.mpicon-arrow-out:before             		{ content: "\006F"; } 
+.mpicon-house:before             				{ content: "\0070"; } 
+
+.mpicon-opened-locker:before             { content: "\0071"; } 
+.mpicon-pencil:before                		{ content: "\0072"; } 
+.mpicon-zoom:before                			{ content: "\0073"; } 
+.mpicon-birdie:before                		{ content: "\0074"; } 
+.mpicon-converge:before                  { content: "\0075"; } 
+.mpicon-disperse:before                  { content: "\0076"; } 
+.mpicon-globe:before               		 	{ content: "\0077"; } 
+.mpicon-circle-close:before              { content: "\0078"; } 
+.mpicon-zoom-in:before               		{ content: "\0079"; } 
+.mpicon-zoom-out:before                	{ content: "\007A"; } 
+.mpicon-clock-pointers:before            { content: "\007B"; } 
+.mpicon-clock:before                			{ content: "\007D"; }

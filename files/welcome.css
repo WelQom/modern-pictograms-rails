@@ -1,0 +1,16 @@
+/* line 5, ../../app/assets/stylesheets/welcome.css.scss */
+#icons {
+  font-size: 110px;
+  margin-bottom: 50px;
+}
+
+/* line 10, ../../app/assets/stylesheets/welcome.css.scss */
+#icons p {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* line 15, ../../app/assets/stylesheets/welcome.css.scss */
+#icons .span1 {
+  margin-right: 100px;
+}
