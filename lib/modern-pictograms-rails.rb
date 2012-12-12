@@ -1,5 +1,3 @@
-require "modern-pictograms-rails/version"
-
 module Modern
   module Pictograms
     module Rails
