@@ -2,7 +2,7 @@
 
 This gem is a rebundling of the contents of modern pictograms:
 
-http://thedesignoffice.org/project/modern-pictograms/
+http://www.fontsquirrel.com/fonts/modern-pictograms
 
 Use with the Rails asset pipeline.
 
