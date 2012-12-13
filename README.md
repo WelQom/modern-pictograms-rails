@@ -2,7 +2,11 @@
 
 This gem is a rebundling of the contents of modern pictograms:
 
-http://www.fontsquirrel.com/fonts/modern-pictograms
+		http://www.fontsquirrel.com/fonts/modern-pictograms
+		
+License for font 'Modern Pictograms':
+
+		http://www.fontsquirrel.com/license/modern-pictograms
 
 Use with the Rails asset pipeline.
 
