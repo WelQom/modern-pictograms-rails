@@ -4,9 +4,9 @@ require File.expand_path('../lib/modern/pictograms/rails/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["hylozero"]
   gem.email         = ["hylozero@gmail.com"]
-  gem.description   = %q{Modern Pictograms gemify. More specific information about font and license: http://thedesignoffice.org/project/modern-pictograms/}
+  gem.description   = %q{Modern Pictograms gemify. More specific information about font and license: http://www.fontsquirrel.com/fonts/modern-pictograms}
   gem.summary       = %q{Modern Pictograms gemify.}
-  gem.homepage      = "http://thedesignoffice.org/project/modern-pictograms/"
+  gem.homepage      = "http://www.fontsquirrel.com/fonts/modern-pictograms"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
