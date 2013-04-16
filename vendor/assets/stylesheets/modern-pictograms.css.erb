@@ -64,22 +64,22 @@ a [class^="mpicon-"], a [class*=" mpicon-"] {
 /* makes the font % larger relative to the icon container */
 .mpicon-large:before {
   vertical-align: top;
-  font-size: .em;
+  font-size: 1.3333333333333333em;
 }
 .btn [class^="mpicon-"], .btn [class*=" mpicon-"] {
   /* keeps button heights with and without icons the same */
 
-  line-height: .em;
+  display: inline;
 }
 li [class^="mpicon-"], li [class*=" mpicon-"] {
   display: inline-block;
-  width: .em;
+  width: 1.25em;
   text-align: center;
 }
 li .mpicon-large[class^="mpicon-"], li .mpicon-large[class*=" mpicon-"] {
   /* . increased font size for mpicon-large * . width */
 
-  width: .em;
+  width: 1.5625em;
 }
 li[class^="mpicon-"], li[class*=" mpicon-"] {
   margin-left: ;
@@ -90,7 +90,7 @@ li[class^="mpicon-"]:before, li[class*=" mpicon-"]:before {
   text-align: center;
 }
 li[class^="mpicon-"].mpicon-large:before, li[class*=" mpicon-"].mpicon-large:before {
-  text-indent: -.em;
+  text-indent: -0.75em;
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
