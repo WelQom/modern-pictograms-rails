@@ -52,6 +52,9 @@
 .mpicon-mp-cart {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#46;&nbsp;');
 }
+.mpicon-mp-cart2 {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#105;&nbsp;');
+}
 .mpicon-mp-inverse-triangle {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#47;&nbsp;');
 }
