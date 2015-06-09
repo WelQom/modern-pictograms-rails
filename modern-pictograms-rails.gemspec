@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "modern-pictograms-rails"
   gem.require_paths = ["lib"]
   gem.version       = Modern::Pictograms::Rails::VERSION
-  
-  gem.add_dependency "railties", "~> 3.1"
+
+  gem.add_dependency "railties", "> 3.1"
   gem.add_development_dependency "rake"
 end
